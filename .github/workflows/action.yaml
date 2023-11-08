@@ -2,11 +2,11 @@ name: actions example
 on: push
 
 jobs: 
-explore-actions :
-runs-on:ubuntu-latest
-steps:
--name:orint event 
-run: echo"the job was automatically by a ${{github.event_name}} event."
+  explore-actions :
+    runs-on:ubuntu-latest
+    steps:
+      -name:orint event 
+      run: echo"the job was automatically by a ${{github.event_name}} event."
 
--name: Print the os of the runner
-run : echo "this job is now running on a ${{ runner.os }} server hosted by github!"
+      -name: Print the os of the runner
+      run : echo "this job is now running on a ${{ runner.os }} server hosted by github!"
