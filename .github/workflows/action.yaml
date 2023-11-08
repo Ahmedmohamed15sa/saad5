@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      -name : Print the os of the runner
-       run : echo "this job is now running on a ${{ runner.os }} server hosted by github!"
+      -name: Print the os of the runner
+       run: echo "this job is now running on a ${{ runner.os }} server hosted by github!"
